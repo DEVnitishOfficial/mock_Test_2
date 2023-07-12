@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Dom manipulation</title>
+        <style>
+            body{
+                background-color: black;
+                text-align: center;
+                font-size: 40px;
+            }
+            div{
+                margin-left: 40%;
+                margin-top: 5%;
+                height: 300px; 
+                width: 300px;
+                border: 2px solid black;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        
+     <div id="square">
+    Dom manipulation testing using html css and javscript
+     </div>
+    </body>
+    <script>
+        const Square = document.getElementById('square');
+        Square.addEventListener('click', () => {
+        Square.style.height="600px";
+        Square.style.width="600px";
+        Square.style.backgroundColor="yellow";
+        })
+    </script>
+
+</html>
